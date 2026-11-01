@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <script src="./script.js" defer></script> 
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <header id="header">
+      <a href="index.html" class="headerlogo"></a>
+      <div class="hrefbox">
+          <a href="#" onclick="scrollToView(event, 'slideshow');"><span>HOME</span></a>
+          <a href="#" onclick="scrollToView(event, 'services');"><span>SERVICES</span></a>
+          <a href="#" onclick="scrollToView(event, 'aboutme');"><span>ABOUT ME</span></a>
+          <a href="#" onclick="scrollToView(event, 'faq');"><span>FAQ</span></a>
+          <a href="#" onclick="scrollToView(event, 'contacts');"><span>CONTACTS</span></a>
+          <a href="https://superdoc.bg/" class="headerBtn">
+            <div>BOOK NOW</div>
+          </a>
+      </div>
+    </header>   
+     
+    <div id="slideshow">
+      <div class="slideshowText">
+        <h1>Johanna Larisson</h1>
+        <p>After all, life isn't just about reaching a final goal—it’s about how we move through it, what we discover, and who we grow into every single day.</p>
+      </div>
+      <a href="https://superdoc.bg/" class="button">
+        <div><span>BOOK A CONSULTATION</span></div>
+      </a>
+    </div>
+
+    <div id="services">
+      <h1>WHAT CAN I HELP YOU WITH<hr></h1>
+      <div class="servicesList">
+        <div class="servicesListOpt" data-header="CONSULTATION" data-paragraph="An initial consultation is a quiet, supportive space to pause and reflect on where you are. It’s an opportunity to share what brings you to therapy, ask questions, and get a feel for how we might work together—with no pressure or expectations. Rather than a formal evaluation, it is simply a first step toward understanding your story and seeing if this is the right environment for your journey.">
+          <img src="./img/icons/icon1.svg" alt="">
+          <span>CONSULTATION</span>
+        </div>
+        <div class="servicesListOpt" data-header="HEALTH AND MIND" data-paragraph="In my practice, Health & Mind are deeply interconnected. True well-being goes beyond managing symptoms—it is about nurturing the balance between your mental, emotional, and physical world. When we give space to our thoughts and emotions, our body responds. Through self-awareness, compassion, and evidence-based psychological support, we work together to relieve inner tension, build resilience, and foster a healthier, more grounded mind.">
+          <img src="./img/icons/icon2.svg" alt="">
+          <span>HEALTH AND MIND</span>
+        </div>
+        <div class="servicesListOpt" data-header="RELATIONSHIPS" data-paragraph="Our connections with others shape who we are—yet they often bring up our deepest challenges. In my practice, exploring Relationships means understanding how you communicate, set boundaries, and connect with the people around you. Whether you are navigating conflict, healing from past wounds, or seeking deeper connection, therapy offers a space to break recurring patterns. Together, we work on fostering healthy, authentic relationships with others—starting with a ground of self-trust and respect.">
+          <img src="./img/icons/icon3.svg" alt="">
+          <span>RELATIONSHIPS</span>
+        </div>
+        <div class="servicesListOpt" data-header="SUPPORT" data-paragraph="Seeking support is not a sign of vulnerability, but a meaningful commitment to your own well-being. In my practice, Support means having a dedicated, confidential space where you never have to navigate life's complexities alone. Whether you are coping with stress, going through major life shifts, or simply feeling overwhelmed, I provide steady, compassionate guidance tailored to your needs. Together, we work to build practical coping strategies and cultivate the inner strength needed to move forward with clarity and confidence.">
+          <img src="./img/icons/icon4.svg" alt="">
+          <span>SUPPORT</span>
+        </div>
+        <div class="servicesListOpt" data-header="SELF- ESTEEM" data-paragraph="Self-Esteem is not about perfection; it is about building a compassionate relationship with yourself. It shapes how you speak to yourself, the boundaries you set, and how worthy you feel of care and respect. In my practice, we work to uncover the root of self-doubt and challenge the internal critic that holds you back. Together, we will rebuild your confidence from within—helping you recognize your intrinsic value, trust your choices, and step into your life with quiet self-assurance.">
+          <img src="./img/icons/icon5.svg" alt="">
+          <span>SELF-ESTEEM</span>
+        </div>
+      </div>
+    </div> 
+
+    <div id="aboutme">
+      <img class="sectionimg" src="./img/home/aboutme.webp" alt="">
+      <div class="textContainer">
+        <h1>ABOUT ME</h1>
+        <h2>Nice to meet you, I am Johanna Larisson!</h2>
+        <p>I chose psychology out of a deep fascination with human nature and our inner world—the experiences that shape us, the choices we make, and how we navigate life’s challenges.</p>
+        <p>I believe self-discovery isn't a single destination, but a continuous journey. At times difficult or confusing, it is always rich with opportunities to understand ourselves more deeply.</p>
+        <p>In my professional practice, I aim to combine my academic foundation with a profound respect for each person’s unique story.</p>
+      </div>
+    </div> 
+
+    <div id="faq">
+      <div class="textContainer">
+        <h1>FAQ</h1>
+        <div class="faqListOpt">
+          <h2>1. What can I expect during our first session?</h2>
+          <p>Our first meeting is a gentle opportunity to get to know each other. We’ll talk about what brings you to therapy, your current challenges, and what you hope to achieve. There’s no pressure to share more than you’re comfortable with—it’s simply a safe space to start exploring your story at your own pace.</p>
+        </div>
+        <div class="faqListOpt">
+          <h2>2. How do I know if therapy is right for me?</h2>
+          <p>You don't need to be in a crisis to benefit from therapy. Whether you're navigating a difficult life transition, feeling stuck, wanting to understand yourself better, or working through specific mental health concerns, therapy offers guidance and dedicated space for your personal growth.</p>
+        </div>
+        <div class="faqListOpt">
+          <h2>3. How long does the therapy process usually take?</h2>
+          <p>Because self-discovery and healing are personal journeys, the timeline is unique to everyone. Some people find the clarity they need in a few short-term sessions, while others prefer ongoing support for deeper reflection and change. We will regularly check in together to see what feels right for you.</p>
+        </div>
+        <div class="faqListOpt">
+          <h2>4. What is your overall approach to therapy?</h2>
+          <p>I believe that how we travel the path of self-discovery matters just as much as the destination. My practice blends evidence-based psychological methods with deep respect for your individual experience, focusing on empathy, self-awareness, and personal resilience.</p>
+        </div>
+        <div class="faqListOpt">
+          <h2>5. How do I prepare for my first appointment?</h2>
+          <p>You don't need to prepare anything formal. Just come as you are. If it helps, you can jot down a few thoughts or questions you’d like to discuss, but we can also just let the conversation unfold naturally.</p>
+        </div>
+      </div>
+    </div> 
+
+    <footer id="contacts">Johanna Larisson 2026 © All rights reserved.<br><br>Informed Consent • Pre-appointment Form • Terms and Conditions • Privacy<br><br>This website is a project for a portfolio. It does not represent a real practicioner or specialist.</footer>
+  </body>
+</html>
