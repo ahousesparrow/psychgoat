@@ -15,17 +15,27 @@
 
       gtag('config', 'G-6X5SDKK5DZ');
     </script>
+    <script>
+      document.addEventListener('click', function(event) {
+        const target = event.target.closest('button, a, .track-click');
+        if (!target) return;
+
+        const itemName = target.id || target.innerText.trim().toLowerCase().replace(/\s+/g, '_') || 'unknown_element';
+
+        gtag('event', 'site_click', {'content_type': target.tagName.toLowerCase(), 'item_id': itemName, 'transport': 'beacon'});
+      });
+    </script>
   </head>
 
   <body>
     <header id="header">
       <a href="index.html" class="headerlogo"></a>
       <div class="hrefbox">
-          <a href="#" onclick="scrollToView(event, 'slideshow'); gtag('event', 'home_click', { 'content_type': 'internal_link', 'item_id': 'home_click', 'transport': 'beacon' });"><span>HOME</span></a>
-          <a href="#" onclick="scrollToView(event, 'services'); gtag('event', 'select_content', { 'content_type': 'internal_link', 'item_id': 'services_click' });"><span>SERVICES</span></a>
-          <a href="#" onclick="scrollToView(event, 'aboutme'); gtag('event', 'select_content', { 'content_type': 'internal_link', 'item_id': 'aboutme_click' });"><span>ABOUT ME</span></a>
-          <a href="#" onclick="scrollToView(event, 'faq'); gtag('event', 'select_content', { 'content_type': 'internal_link', 'item_id': 'faq_click' });"><span>FAQ</span></a>
-          <a href="#" onclick="scrollToView(event, 'contacts'); gtag('event', 'select_content', { 'content_type': 'internal_link', 'item_id': 'contacts_click' });"><span>CONTACTS</span></a>
+          <a href="#" onclick="scrollToView(event, 'slideshow');"><span>HOME</span></a>
+          <a href="#" onclick="scrollToView(event, 'services');"><span>SERVICES</span></a>
+          <a href="#" onclick="scrollToView(event, 'aboutme');"><span>ABOUT ME</span></a>
+          <a href="#" onclick="scrollToView(event, 'faq');"><span>FAQ</span></a>
+          <a href="#" onclick="scrollToView(event, 'contacts');"><span>CONTACTS</span></a>
           <a href="https://superdoc.bg/" class="headerBtn">
             <div>BOOK NOW</div>
           </a>
