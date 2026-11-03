@@ -21,7 +21,7 @@
     <header id="header">
       <a href="index.html" class="headerlogo"></a>
       <div class="hrefbox">
-          <a href="#" onclick="scrollToView(event, 'slideshow'); gtag('event', 'home_click', { 'content_type': 'internal_link' });"><span>HOME</span></a>
+          <a href="#" onclick="scrollToView(event, 'slideshow'); gtag('event', 'home_click', { 'content_type': 'internal_link', 'item_id': 'home_click', 'transport': 'beacon' });"><span>HOME</span></a>
           <a href="#" onclick="scrollToView(event, 'services'); gtag('event', 'select_content', { 'content_type': 'internal_link', 'item_id': 'services_click' });"><span>SERVICES</span></a>
           <a href="#" onclick="scrollToView(event, 'aboutme'); gtag('event', 'select_content', { 'content_type': 'internal_link', 'item_id': 'aboutme_click' });"><span>ABOUT ME</span></a>
           <a href="#" onclick="scrollToView(event, 'faq'); gtag('event', 'select_content', { 'content_type': 'internal_link', 'item_id': 'faq_click' });"><span>FAQ</span></a>
